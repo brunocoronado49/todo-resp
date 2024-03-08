@@ -1,0 +1,187 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  padding: 50px;
+  background-color: #021127;
+  color: #daf0f0;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+ul li {
+  list-style: none;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.form {
+  width: 70%;
+
+}
+
+.title {
+  text-align: center;
+  font-size: 30px;
+}
+
+.input-task {
+  padding: 20px;
+  width: 100%;
+  border: none;
+  border-radius: 10px;
+  margin: 10px;
+}
+
+.list-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.list-texts {
+  font-size: 20px;
+  padding-right: 30px;
+}
+
+.list-task-title {
+  font-size: 30px;
+}
+
+.task-text {
+  font-size: 1rem;
+}
+
+.list-icon {
+  margin-left: 30px;
+  margin-right: 20px;
+  padding: 15px;
+  background-color: red;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.list-info {
+  margin-left: 30px;
+  margin-right: 20px;
+  padding: 15px;
+  background-color: rgb(207, 207, 207);
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.status-pending {
+  color: #ff6600;
+}
+
+.status-completed {
+  color: #03094b;
+}
+
+.actions {
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+}
+
+.todo-count {
+  margin: 0 40px;
+}
+
+.filtro {
+  margin: 0 20px;
+  background-color: blue;
+  padding: 10px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 640px) {
+  body {
+    padding: 20px; /* Reducir el padding para tamaños de pantalla más pequeños */
+    background-color: #021127;
+    color: #daf0f0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  
+  ul li {
+    list-style: none;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  .form {
+    width: 100%; /* Cambiar a 100% para adaptarse a pantallas más pequeñas */
+  }
+  
+  .title {
+    text-align: center;
+    font-size: 30px;
+  }
+  
+  .input-task {
+    padding: 15px; /* Reducir el padding para tamaños de pantalla más pequeños */
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    margin: 10px;
+  }
+  
+  .list-item {
+    display: flex;
+    flex-wrap: wrap; /* Permitir que los elementos se envuelvan en tamaños de pantalla más pequeños */
+    align-items: center;
+    justify-content: center;
+    padding: 10px; /* Reducir el padding para tamaños de pantalla más pequeños */
+  }
+  
+  .list-texts {
+    font-size: 20px;
+    padding-right: 10px; /* Reducir el espacio entre elementos para tamaños de pantalla más pequeños */
+  }
+  
+  .list-task-title {
+    font-size: 24px; /* Reducir el tamaño de la fuente para tamaños de pantalla más pequeños */
+  }
+  
+  .task-text {
+    font-size: 0.8rem; /* Reducir el tamaño de la fuente para tamaños de pantalla más pequeños */
+  }
+  
+  .list-icon,
+  .list-info {
+    margin: 10px; /* Ajustar el margen para tamaños de pantalla más pequeños */
+    padding: 10px;
+  }
+  
+  .status-pending {
+    color: #ff6600;
+  }
+  
+  .status-completed {
+    color: #03094b;
+  }
+  
+  .actions {
+    display: flex;
+    justify-content: center;
+    padding: 15px; /* Reducir el padding para tamaños de pantalla más pequeños */
+  }
+  
+  .todo-count,
+  .filtro {
+    margin: 0 10px; /* Ajustar el margen para tamaños de pantalla más pequeños */
+    padding: 5px 10px; /* Reducir el padding para tamaños de pantalla más pequeños */
+  }
+}
